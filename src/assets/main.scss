@@ -1,9 +1,15 @@
 @import "~bulma/bulma";
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker:400");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 .permanent-marker {
     font-family: Permanent Marker, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.type-writer {
+    font-family: 'Space Mono', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -12,13 +18,27 @@ a {
     color: #8892b0;
 }
 
+body, html {
+    background-color: #19242F;
+}
+.card {
+    border-radius: 6px;
+    font-family: 'Space Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.card .card-title {
+    font-weight: bold;
+}
+
 #app {
     font-family: 'Noto Sans TC', sans-serif;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #171c28;
+    background-color: #19242F;
     // color: #444452;
     color: #fff;
     line-height: 1.5;
@@ -65,13 +85,13 @@ a {
     display: inline-block;
     padding: 2px 3px;
     text-decoration: none;
-    -webkit-box-shadow: inset 0 -3px 0 #00d1b2;
-    box-shadow: inset 0 -3px 0 #00d1b2;
+    -webkit-box-shadow: inset 0 -3px 0 #81ABAE;
+    box-shadow: inset 0 -3px 0 #81ABAE;
 }
 
 .intro__contact .highlight-link:hover {
-    -webkit-box-shadow: inset 0 -33px 0 0 #00d1b2;
-    box-shadow: inset 0 -33px 0 0 #00d1b2;
+    -webkit-box-shadow: inset 0 -33px 0 0 #81ABAE;
+    box-shadow: inset 0 -33px 0 0 #81ABAE;
     color: #fff;
 }
 
@@ -86,8 +106,8 @@ a {
     -ms-flex-align: center;
     align-items: center;
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 37px;
+    right: 95px;
 }
 .follow-wrapper {
     display: -webkit-box;
@@ -110,8 +130,10 @@ a {
     color: #fff;
 }
 .follow-wrapper .item a:hover svg{
-    -webkit-box-shadow: inset 0 -33px 0 0 #00d1b2;
-    box-shadow: inset 0 -33px 0 0 #00d1b2;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-box-shadow: inset 0 -33px 0 0 #81ABAE;
+    box-shadow: inset 0 -33px 0 0 #81ABAE;
     color: #fff;
 }
 .spacer-wrapper {
@@ -124,11 +146,53 @@ a {
     border-bottom: 1px solid #ffffff;
 }
 
+.section {
+    width: 1280px;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 55px auto 0;
+    padding: 40px;
+}
+.section-header {
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 160px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-align: left;
+    z-index: 10;
+    position: relative;
+    line-height: 0.6em;
+    pointer-events: none;
+    flex: 1 100%;
+}
+.section-header-small {
+    font-size: 54px;
+}
+
+.section-content {
+    color: #fff;
+    padding-top: 75px;
+    padding-right: 55%;
+    padding-left: 50px;
+    margin-bottom: 3rem;
+    background-color: #81ABAE;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
 /*Responsive*/
 @media screen and (max-width: 1024px) {
     .intro__hello,
     .intro__tagline {
         font-size: 2.25rem;
+    }
+}
+@media all and (max-width: 900px) {
+    .section {
+        padding-right: 30px;
+        padding-left: 30px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -140,6 +204,15 @@ a {
 @media screen and (max-width: 630px) {
     .intro {
         padding: 120px 70px;
+    }
+    .section {
+        padding: 15px;
+    }
+    .section-header {
+        font-size: 18vw;
+    }
+    .section-header-small {
+        font-size: 9vw;
     }
 }
 @media screen and (max-width: 550px) {

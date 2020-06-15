@@ -22,3 +22,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Acknowledgments
+* [Colormind](http://colormind.io/) - Color palette generator
+* [Tobias Ahlin](https://twitter.com/tobiasahlin) - Design Information
+* [Brittany Chiang](https://brittanychiang.com/) - Github Integration
+
