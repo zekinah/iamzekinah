@@ -40,7 +40,6 @@ export default {
         this.repository = (await user.listRepos({ type: "owner" })).data.map(i => ({
           ...i,
         }));
-        console.log(this.repository);
         
       } catch (e) {
         if (e.response && e.response.status === 404) {

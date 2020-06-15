@@ -3,13 +3,18 @@
     <div class="card tile">
       <div class="card-content">
         <div class="content">
-          <p class="card-title">
+          <p class="repo__title">
             <span class="icon">
               <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M18,22A2,2 0 0,0 20,20V4C20,2.89 19.1,2 18,2H12V9L9.5,7.5L7,9V2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18Z" />
               </svg>
             </span>
-            {{data.name}}
+            <a :href="data.html_url" target="_blank" rel="noopener noreferrer">{{data.name}}</a>
+              <span class="icon is-pulled-right">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </span>
             </p>
           <p class="repo__description">{{data.description}}</p>
           <div class="repo__stats levels">
@@ -43,16 +48,22 @@
 <script>
 export default {
   name: 'repo',
-  props: ['data']
+  props: ['data'],
 }
 </script>
 
 <style lang="scss">
-  .repo .card-title svg {
+  .repo .repo__title {
+      font-weight: bold;
+  }
+  .repo .repo__title a {
+      color: #4a4a4a;
+  }
+  .repo .repo__title svg {
     position: absolute;
     margin-top: 6px;
   }
-  .repo_description {
+  .repo__description {
       font-size: 13px;
   }
   .repo__stats {
@@ -61,5 +72,6 @@ export default {
       font-family: "Roboto", "Helvetica", "Arial", sans-serif;
       font-weight: 300;
       line-height: 1.5em;
+      margin-top: 40px;
   }
 </style>
