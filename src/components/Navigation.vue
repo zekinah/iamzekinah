@@ -29,10 +29,13 @@ export default {
 </script>
 
 <style lang="scss">
-.bm-burger-bars {
-    background-color: #fff;
+body .bm-burger-bars {
+    background-color: #F5F2F4;
 }
-.bm-menu {
+body.light-mode .bm-burger-bars {
+    background-color: #19242F;
+}
+body .bm-menu {
     background-color: #5290B2;
 }
 span.site-logo {
@@ -45,5 +48,8 @@ span.site-logo {
 }
 span.site-logo a.title{
     color: #81ABAE;
+}
+body.light-mode span.site-logo a.title{
+    color: #19242F;
 }
 </style>

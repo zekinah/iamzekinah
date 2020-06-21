@@ -9,6 +9,7 @@
           <Repo :data="repos"/>
         </div>
     </div>
+    <Footer/>
   </div>
 </template>
 
@@ -16,6 +17,7 @@
 import GitHub from "github-api";
 import Loading from "@/components/Loading.vue";
 import Repo from "@/components/Repo.vue";
+import Footer from "@/components/Footer.vue";
 const github = new GitHub();
 const user = github.getUser('zekinah');
 export default {  
@@ -56,7 +58,8 @@ export default {
   },
   components: {
     Repo,
-    Loading
+    Loading,
+    Footer
   }
 }
 </script>

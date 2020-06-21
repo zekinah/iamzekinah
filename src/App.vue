@@ -2,7 +2,7 @@
   <div id="app">
     <navigation/>
     <dntoogle/>
-    <router-view />
+    <router-view/>
   </div>
 </template>
 <script>

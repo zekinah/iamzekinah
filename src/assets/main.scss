@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
+$background: #19242F;
+$primarycolor: #81ABAE;
+$light: #F5F2F4;
+$dark: #19242F;
+$link: #8892b0;
+
 *, *:before, *:after {
     box-sizing:  border-box !important;
 }
@@ -19,19 +25,26 @@
 }
 
 a {
-    color: #8892b0;
+    color: $link;
 }
-
+a:hover {
+    color: $link;
+}
 strong {
     color:  inherit;
 }
-
-body, html {
-    background-color: #19242F;
+body,html {
+    background-color: lighten($dark, 5%);
+    transition: background-color .2s ease, color .2s ease;
+    color: $light;
+}
+body.light-mode {
+    background-color: lighten($light, 5%);
+    transition: background-color .2s ease, color .2s ease;
+    color: $dark;
 }
 ::selection, code[class*="language-"]::selection {
-    background-color: #81ABAE;
-    color: #fff; 
+    background-color: $primarycolor;
 } 
 .card {
     border-radius: 6px;
@@ -60,8 +73,6 @@ body, html {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #19242F;
-    color: #fff;
     line-height: 1.5;
     width: 100%;
 }
@@ -98,7 +109,7 @@ body, html {
     font-size: 1.25rem;
     font-weight: 400;
 }
-.intro__contact .highlight-link {
+.intro__contact a.highlight-link {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     font-weight: 400;
@@ -106,14 +117,14 @@ body, html {
     display: inline-block;
     padding: 2px 3px;
     text-decoration: none;
-    -webkit-box-shadow: inset 0 -3px 0 #81ABAE;
-    box-shadow: inset 0 -3px 0 #81ABAE;
+    -webkit-box-shadow: inset 0 -3px 0 $primarycolor;
+    box-shadow: inset 0 -3px 0 $primarycolor;
 }
 
-.intro__contact .highlight-link:hover {
-    -webkit-box-shadow: inset 0 -33px 0 0 #81ABAE;
-    box-shadow: inset 0 -33px 0 0 #81ABAE;
-    color: #fff;
+.intro__contact a.highlight-link:hover {
+    -webkit-box-shadow: inset 0 -33px 0 0 $primarycolor;
+    box-shadow: inset 0 -33px 0 0 $primarycolor;
+    color: $light;
 }
 
 .switch-wrapper {
@@ -135,14 +146,6 @@ body, html {
     width: 17px;
     height: 17px;
 }
-.switch-wrapper .sun {
-    background: url(switch/sun-white.svg) no-repeat center;
-    background-size: 100%;
-}
-.switch-wrapper .moon {
-    background: url(switch/moon-white.svg) no-repeat center;
-    background-size: 100%;
-}
 .switch-wrapper .toggle-wrapper {
     margin: 10px;
 }
@@ -153,7 +156,7 @@ body, html {
     position: absolute;
 }
 .switch-wrapper .toggle-wrapper #switch:checked + label {
-    background: #81ABAE;
+    background: $primarycolor;
 }
 .switch-wrapper .toggle-wrapper #switch:checked + label:after {
     left: calc(100% - 3px);
@@ -179,7 +182,7 @@ body, html {
     left: 3px;
     width: 19px;
     height: 19px;
-    background: #fff;
+    background: $light;
     border-radius: 100%;
 }
 .follow-wrapper {
@@ -200,14 +203,15 @@ body, html {
     margin: 0 5px;
 }
 .follow-wrapper .item a{
-    color: #fff;
+    color: $light;
+}
+body.light-mode .follow-wrapper .item a{
+    color: $dark;
 }
 .follow-wrapper .item a:hover svg{
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    // -webkit-box-shadow: inset 0 -33px 0 0 #81ABAE;
-    // box-shadow: inset 0 -33px 0 0 #81ABAE;
-    color: #81ABAE;
+    color: $primarycolor;
 }
 .spacer-wrapper {
     display: inline-block;
@@ -216,16 +220,18 @@ body, html {
     margin-right: 15px;
     vertical-align: middle;
     position: relative;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid $light;
 }
-
+body.light-mode .spacer-wrapper {
+    border-bottom: 1px solid $dark;
+}
 .page {
     width: 1280px;
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    margin: 55px auto 0;
-    padding: 40px;
+    margin: auto;
+    padding: 120px 40px 40px;
 }
 .page-header {
     font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
@@ -242,12 +248,11 @@ body, html {
 .page-header-small {
     font-size: 54px;
 }
-
 .page-content {
-    color: #fff;
+    color: $light;
     padding-top: 75px;
     margin-bottom: 3rem;
-    background-color: #81ABAE;
+    background-color: $primarycolor;
     text-align: left;
     position: relative;
     box-sizing: border-box;
@@ -267,7 +272,7 @@ body, html {
     flex-shrink: 0;
     width: 200px;
     margin-right: 70px;
-    color: #81abae;
+    color: $primarycolor;
     text-transform: uppercase;
     text-align: right;
     font-weight: 700;
@@ -318,6 +323,22 @@ body, html {
 }
 .company .company__time {
     font-size: .9rem;
+}
+.footer {
+    padding: unset;
+    background: unset;
+    position: absolute;
+    margin: auto;
+    right: 30px;
+}
+.footer .footer__content {
+    font-size: 10px;
+}
+.footer .footer__content {
+    color: $light;
+}
+body.light-mode .footer .footer__content {
+    color: $dark;
 }
 /*Responsive*/
 @media screen and (max-width: 1280px) {

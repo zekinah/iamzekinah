@@ -23,7 +23,7 @@ export default {
       skills: [
         {
           skill_id: 1,
-          skill_title: "Langauge",
+          skill_title: "Technologies",
           skill_list: [
             { skill_name: "Javascript (ES6+)", },
             { skill_name: "My Sql", },
@@ -40,7 +40,8 @@ export default {
             { skill_name: "Magento 1 and 2", },
             { skill_name: "jQuery + ajax", },
             { skill_name: "Vue + axios", },
-            { skill_name: "Wordpress", }
+            { skill_name: "Wordpress", },
+            { skill_name: "GIT & SVN", }
           ]
         }
       ]

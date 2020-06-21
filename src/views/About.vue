@@ -6,6 +6,7 @@
     <SectionSkills/>
     <SectionExperience/>
     <SectionOtherstuff/>
+    <Footer/>
   </div>
 </template>
 
@@ -14,13 +15,15 @@ import SectionBackground from "@/components/SectionBackground.vue";
 import SectionExperience from "@/components/SectionExperience.vue";
 import SectionSkills from "@/components/SectionSkills.vue";
 import SectionOtherstuff from "@/components/SectionOtherstuff.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: 'about',
   components: {
     SectionBackground,
     SectionExperience,
     SectionSkills,
-    SectionOtherstuff
+    SectionOtherstuff,
+    Footer
   }
 }
 </script>
