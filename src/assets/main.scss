@@ -22,11 +22,15 @@ a {
     color: #8892b0;
 }
 
+strong {
+    color:  inherit;
+}
+
 body, html {
     background-color: #19242F;
 }
 ::selection, code[class*="language-"]::selection {
-    background-color: #ffb700;
+    background-color: #81ABAE;
     color: #fff; 
 } 
 .card {
@@ -46,7 +50,7 @@ body, html {
     box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
     height: 100%;
     width: 100%;
-    padding: 2rem 1.75rem;
+    padding: 1rem 1.75rem;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
@@ -201,9 +205,9 @@ body, html {
 .follow-wrapper .item a:hover svg{
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    -webkit-box-shadow: inset 0 -33px 0 0 #81ABAE;
-    box-shadow: inset 0 -33px 0 0 #81ABAE;
-    color: #fff;
+    // -webkit-box-shadow: inset 0 -33px 0 0 #81ABAE;
+    // box-shadow: inset 0 -33px 0 0 #81ABAE;
+    color: #81ABAE;
 }
 .spacer-wrapper {
     display: inline-block;
@@ -215,7 +219,7 @@ body, html {
     border-bottom: 1px solid #ffffff;
 }
 
-.section {
+.page {
     width: 1280px;
     max-width: 100%;
     overflow: hidden;
@@ -223,7 +227,7 @@ body, html {
     margin: 55px auto 0;
     padding: 40px;
 }
-.section-header {
+.page-header {
     font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
     font-size: 160px;
     font-weight: 800;
@@ -235,33 +239,111 @@ body, html {
     pointer-events: none;
     flex: 1 100%;
 }
-.section-header-small {
+.page-header-small {
     font-size: 54px;
 }
 
-.section-content {
+.page-content {
     color: #fff;
     padding-top: 75px;
-    padding-right: 55%;
-    padding-left: 50px;
     margin-bottom: 3rem;
     background-color: #81ABAE;
     text-align: left;
     position: relative;
     box-sizing: border-box;
 }
-
+.section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 50px 0px;
+    font-family: "Space Mono", monospace;
+}
+.section__title {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 200px;
+    margin-right: 70px;
+    color: #81abae;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.section__content {
+    font-weight: 300;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 650px;
+}
+.section__content p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.skills .skills__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.skills .skills__list ul li {
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+.company {
+    margin-bottom: 25px;
+}
+.company .company__job {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.company .company__name {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.company .company__time {
+    font-size: .9rem;
+}
 /*Responsive*/
+@media screen and (max-width: 1280px) {
+    .section {
+        padding: 100px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .intro__hello,
     .intro__tagline {
         font-size: 2.25rem;
     }
+    .section {
+        padding: 50px;
+    }
+    .section__title {
+        margin-right: 50px;
+    }
 }
 @media all and (max-width: 900px) {
-    .section {
+    .page {
         padding-right: 30px;
         padding-left: 30px;
+    }
+    .section__title {
+        width: 150px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -269,18 +351,30 @@ body, html {
     .intro__tagline {
         font-size: 2rem;
     }
+    .section {
+        display: block;
+    }
+    .section__title {
+        text-align: left;
+        width: auto;
+    }
+    .section__content {
+        padding-top: 30px;
+        padding-left: 50px;
+    }
 }
 @media screen and (max-width: 630px) {
     .intro {
         padding: 120px 70px;
     }
-    .section {
+    .page {
         padding: 15px;
+        margin: 85px auto 0;
     }
-    .section-header {
+    .page-header {
         font-size: 18vw;
     }
-    .section-header-small {
+    .page-header-small {
         font-size: 9vw;
     }
 }
@@ -303,6 +397,12 @@ body, html {
 @media screen and (max-width: 480px) {
     .intro {
         padding: 70px 50px;
+    }
+    .section {
+        padding: 50px 35px;
+    }
+    .section__content {
+        padding-left: unset;
     }
 }
 @media screen and (max-width: 360px) {

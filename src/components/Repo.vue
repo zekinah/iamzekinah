@@ -9,12 +9,14 @@
                   <path fill="currentColor" d="M18,22A2,2 0 0,0 20,20V4C20,2.89 19.1,2 18,2H12V9L9.5,7.5L7,9V2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18Z" />
               </svg>
             </span>
-            <a :href="data.html_url" target="_blank" rel="noopener noreferrer">{{data.name}}</a>
-              <span class="icon is-pulled-right">
+            <a class="repo__link" :href="data.html_url" target="_blank" rel="noopener noreferrer">{{data.name}}</a>
+            <a class="repo__homepage" :href="data.homepage" target="_blank" rel="noopener noreferrer" v-if="data.homepage">
+              <span class="icon is-pulled-right" >
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
                 </svg>
               </span>
+            </a>
             </p>
           <p class="repo__description">{{data.description}}</p>
           <div class="repo__stats levels">

@@ -1,8 +1,8 @@
 <template>
-  <div class="section project">
+  <div class="page project">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <h1 class="section-header">Projects.</h1>
-    <div class="section-content"></div>
+    <h1 class="page-header">Projects.</h1>
+    <div class="page-content"></div>
     <Loading v-show="profileLoading"/>
     <div class="columns is-multiline">
         <div v-for="repos of repository" :key="repos.id" class="column is-one-third">
@@ -50,6 +50,8 @@ export default {
       }
       this.profileLoading = false;
       this.reposLoading = false;
+      console.log(this.repository);
+      
     },
   },
   components: {
