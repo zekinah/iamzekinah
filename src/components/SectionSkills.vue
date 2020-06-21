@@ -39,7 +39,7 @@ export default {
             { skill_name: "Wordpress Plugin BoilerPlates", },
             { skill_name: "Magento 1 and 2", },
             { skill_name: "jQuery + ajax", },
-            { skill_name: "Vue + axios", },
+            { skill_name: "VueJS + axios", },
             { skill_name: "Wordpress", },
             { skill_name: "GIT & SVN", }
           ]

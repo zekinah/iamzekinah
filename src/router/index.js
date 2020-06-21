@@ -19,6 +19,11 @@ Vue.use(VueRouter)
     path: '/project',
     name: 'Project',
     component: () => import(/* webpackChunkName: "about" */ '../views/Project.vue')
+  },
+  {
+    path: "*",
+    name: '404',
+    component: () => import(/* webpackChunkName: "about" */ '../views/404.vue')
   }
 ]
 
