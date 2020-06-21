@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/bchiang7/v4/master/public/img/icons/favicon-32x32.png" width="100" alt="site-logo"/>
+  <img src="https://raw.githubusercontent.com/zekinah/iamzekinah/master/public/img/icons/favicon-32x32.png" width="100" alt="site-logo"/>
 </div>
 <h1 align="center">
   iamzekinah.com
