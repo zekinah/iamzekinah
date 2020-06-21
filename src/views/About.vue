@@ -24,6 +24,9 @@ export default {
     SectionSkills,
     SectionOtherstuff,
     Footer
+  },
+  mounted() {
+    this.$ga.page('/about');
   }
 }
 </script>

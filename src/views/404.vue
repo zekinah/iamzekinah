@@ -12,6 +12,9 @@ export default {
   name: '404',
   components: {
     Footer
+  },
+  mounted() {
+    this.$ga.page('/404');
   }
 }
 </script>

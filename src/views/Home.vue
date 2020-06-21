@@ -18,6 +18,9 @@ export default {
   name: 'home',
   components: {
     followme
+  },
+  mounted() {
+    this.$ga.page('/home');
   }
 }
 </script>

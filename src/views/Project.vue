@@ -52,7 +52,6 @@ export default {
       }
       this.profileLoading = false;
       this.reposLoading = false;
-      console.log(this.repository);
       
     },
   },
@@ -60,6 +59,9 @@ export default {
     Repo,
     Loading,
     Footer
+  },
+  mounted() {
+    this.$ga.page('/project');
   }
 }
 </script>
