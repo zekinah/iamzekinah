@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/zekinah/iamzekinah/master/public/img/icons/favicon-32x32.png" width="100" alt="site-logo"/>
 </div>
 <h1 align="center">
-  iamzekinah.com
+  zekinahlecaros.com
 </h1>
 <p align="center">
   <a href="https://app.netlify.com/sites/iamzekinah/deploys" target="_blank">

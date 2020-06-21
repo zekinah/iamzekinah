@@ -1,7 +1,7 @@
 <template>
-  <div id="__otherstuff" class="section">
-    <div class="section__title">Other Stuffs</div>
-    <div class="section__content">
+  <div id="__otherstuff" class="columns is-desktop section">
+    <div class="column section__title is-one-fifth">Other Stuffs</div>
+    <div class="column section__content">
       <codersrank-widget username="zekinah"></codersrank-widget>
     </div>
   </div>

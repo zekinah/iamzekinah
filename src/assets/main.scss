@@ -280,7 +280,6 @@ body.light-mode .spacer-wrapper {
 .section {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -288,9 +287,6 @@ body.light-mode .spacer-wrapper {
     font-family: "Space Mono", monospace;
 }
 .section__title {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    width: 200px;
     margin-right: 70px;
     color: $primarycolor;
     text-transform: uppercase;
@@ -302,7 +298,7 @@ body.light-mode .spacer-wrapper {
     font-weight: 300;
     font-size: 1rem;
     width: 100%;
-    max-width: 650px;
+    max-width: 675px;
 }
 .section__content p {
     margin-top: 0;
@@ -383,9 +379,6 @@ body.light-mode .footer .footer__content {
         padding-right: 30px;
         padding-left: 30px;
     }
-    .section__title {
-        width: 150px;
-    }
 }
 @media screen and (max-width: 768px) {
     .intro__hello,
@@ -398,6 +391,7 @@ body.light-mode .footer .footer__content {
     .section__title {
         text-align: left;
         width: auto;
+        padding: unset;
     }
     .section__content {
         padding-top: 30px;
@@ -409,8 +403,7 @@ body.light-mode .footer .footer__content {
         padding: 120px 70px;
     }
     .page {
-        padding: 15px;
-        margin: 85px auto 0;
+        padding: 95px 15px;
     }
     .page-header {
         font-size: 18vw;
@@ -434,6 +427,9 @@ body.light-mode .footer .footer__content {
         width: 25px;
         height: 25px;
     }
+    .page-content {
+        padding-top: 40px;
+    }
 }
 @media screen and (max-width: 480px) {
     .intro {
@@ -444,12 +440,16 @@ body.light-mode .footer .footer__content {
     }
     .section__content {
         padding-left: unset;
+        padding-right: unset;
     }
 }
 @media screen and (max-width: 360px) {
     .intro__hello,
     .intro__tagline {
         font-size: 1.5rem;
+    }
+    .company .company__job {
+        display: unset;
     }
 }
 @media screen and (max-width: 330px) {
