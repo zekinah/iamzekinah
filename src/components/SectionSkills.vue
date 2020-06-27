@@ -26,6 +26,8 @@ export default {
           skill_title: "Technologies",
           skill_list: [
             { skill_name: "Javascript (ES6+)", },
+            { skill_name: "jQuery + ajax", },
+            { skill_name: "VueJS + axios", },
             { skill_name: "My Sql", },
             { skill_name: "HTML", },
             { skill_name: "CSS", },
@@ -37,9 +39,8 @@ export default {
           skill_title: "CMS and Tools",
           skill_list: [
             { skill_name: "Wordpress Plugin BoilerPlates", },
+            { skill_name: "VS Code Editor", },
             { skill_name: "Magento 1 & 2", },
-            { skill_name: "jQuery + ajax", },
-            { skill_name: "VueJS + axios", },
             { skill_name: "Wordpress", },
             { skill_name: "GIT & SVN", }
           ]
