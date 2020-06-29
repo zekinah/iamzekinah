@@ -13,6 +13,18 @@ export default {
   components: {
     navigation,
     dntoogle,
+  },
+  metaInfo() {
+    return { 
+      title: "Zekinah Lecaros | Web Developer",
+      meta: [
+        { name: 'description', content:  'A person who will strive for his achievements with the use of digital tools and open source.'},
+        { property: 'og:title', content: "Zekinah Lecaros | Web Developer"},
+        { property: 'og:site_name', content: 'Zekinah Lecaros | Web Developer'},
+        { property: 'og:type', content: 'website'},    
+        { name: 'robots', content: 'index,follow'} 
+      ]
+    }
   }
 }
 </script>
