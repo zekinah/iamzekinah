@@ -353,6 +353,12 @@ body.light-mode .spacer-wrapper {
 .footer .footer__content {
     color: $light;
 }
+.footer .footer__content .dmca {
+    text-align: right;
+}
+.footer .footer__content img {
+    vertical-align: middle;
+}
 body.light-mode .footer .footer__content {
     color: $dark;
 }
@@ -450,6 +456,9 @@ body.light-mode .footer .footer__content {
     }
     .company .company__job {
         display: unset;
+    }
+    .footer .footer__content .dmca {
+        text-align: center;
     }
 }
 @media screen and (max-width: 330px) {
