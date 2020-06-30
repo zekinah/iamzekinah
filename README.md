@@ -47,3 +47,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * [Tobias Ahlin](https://twitter.com/tobiasahlin) - Design Idea
 * [Brittany Chiang](https://brittanychiang.com/) - Github Integration
 
+## ℹ️ Forking this project
+Feel free to fork this repo. If you do, please add attribution or just give me proper credit by linking back to the repo,
+https://github.com/zekinah/iamzekinah
+
