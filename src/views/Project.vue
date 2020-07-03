@@ -5,7 +5,7 @@
     <div class="page-content"></div>
     <Loading v-show="profileLoading"/>
     <div class="columns is-multiline">
-        <div v-for="repos of repository" :key="repos.id" class="column is-one-third">
+        <div v-for="repos of repository" :key="repos.id" class="column is-one-third" v-show="!repos.fork">
           <Repo :data="repos"/>
         </div>
     </div>
@@ -42,7 +42,6 @@ export default {
         this.repository = (await user.listRepos({ type: "owner" })).data.map(i => ({
           ...i,
         }));
-        
       } catch (e) {
         if (e.response && e.response.status === 404) {
           this.githubError = "User not found!";

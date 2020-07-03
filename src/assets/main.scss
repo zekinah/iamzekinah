@@ -46,6 +46,15 @@ body.light-mode {
 ::selection, code[class*="language-"]::selection {
     background-color: $primarycolor;
 }
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: $primarycolor;
+  border-radius: 10rem;
+}
+
 .blink {
     animation:blinkingText 1.2s infinite;
 }
