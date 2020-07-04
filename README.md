@@ -8,6 +8,9 @@
   <a href="https://app.netlify.com/sites/iamzekinah/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/4ef0b667-461f-416c-ba2e-dcc48adfabd5/deploy-status" alt="Netlify Status" />
   </a>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/zekinah/iamzekinah">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/zekinah/iamzekinah">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/zekinah/iamzekinah">
 </p>
 
 ![demo](https://raw.githubusercontent.com/zekinah/iamzekinah/master/public/img/demo.png)
