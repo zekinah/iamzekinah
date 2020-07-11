@@ -9,7 +9,7 @@
           <Repo :data="repos"/>
         </div>
     </div>
-    <Footer/>
+    <SiteFooter/>
   </div>
 </template>
 
@@ -17,7 +17,7 @@
 import GitHub from "github-api";
 import Loading from "@/components/Loading.vue";
 import Repo from "@/components/Repo.vue";
-import Footer from "@/components/Footer.vue";
+import SiteFooter from "@/components/SiteFooter.vue";
 const github = new GitHub();
 const user = github.getUser('zekinah');
 export default {  
@@ -57,7 +57,7 @@ export default {
   components: {
     Repo,
     Loading,
-    Footer
+    SiteFooter
   },
   mounted() {
     this.$ga.page('/project');

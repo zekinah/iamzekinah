@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/zekinah/iamzekinah/master/public/img/icons/favicon-32x32.png" width="100" alt="site-logo"/>
+  <img src="https://raw.githubusercontent.com/zekinah/iamzekinah/master/public/img/iamzekinah.png" width="100" alt="site-logo"/>
 </div>
 <h1 align="center">
   zekinahlecaros.com
@@ -39,7 +39,7 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 🛠 Built with
-* [Vue-CLi](https://github.com/vuejs/vue-cli)
+* [VueJS](https://vuejs.org/)
 * [Bulma](http://bulma.io/)
 * [Github-API](https://developer.github.com/v3/)
 * [Vue-burger-menu](https://github.com/mbj36/vue-burger-menu)
