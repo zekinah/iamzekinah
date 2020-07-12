@@ -1,0 +1,15 @@
+{
+    "name": "Zekinah Lecaros",
+    "short_name": "Zekinah Lecaros",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#223140",
+    "background_color": "#223140",
+    "start_url": "https://zekinahlecaros.com/",
+    "display": "standalone"
+}

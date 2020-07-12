@@ -28,9 +28,8 @@ export default {
             { skill_name: "Javascript (ES6+)", },
             { skill_name: "jQuery + ajax", },
             { skill_name: "VueJS + axios", },
-            { skill_name: "My Sql", },
-            { skill_name: "HTML", },
-            { skill_name: "CSS", },
+            { skill_name: "HTML & CSS", },
+            { skill_name: "My Sqli", },
             { skill_name: "PHP", }
           ]
         },

@@ -2,10 +2,10 @@
 
 module.exports = {
     pwa: {
-      name: 'iamzekinah',
-      themeColor: '#81ABAE',
+      name: 'Zekinah Lecaros',
+      themeColor: '#223140',
       msTileColor: '#223140',
       appleMobileWebAppCapable: 'yes',
-      appleMobileWebAppStatusBarStyle: 'black'
+      appleMobileWebAppStatusBarStyle: '#223140'
     }
   }
