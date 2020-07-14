@@ -21,7 +21,7 @@ export default {
     data: () => ({
       experience: [
           { id: 1, name: "OptimizeX", time: "Sept 2018 - Present", role: "Web Developer" },
-          { id: 2, name: "AMORELE Technology, Inc", time: "June - July 2017", role: "Software  Developer" },
+          { id: 2, name: "AMORELE Technology, Inc", time: "June - July 2017", role: "Intern student as Software  Developer" },
         ]
     })
 }
