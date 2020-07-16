@@ -53,4 +53,8 @@ span.site-logo a.title{
 body.light-mode span.site-logo a.title{
     color: #19242F;
 }
+a#resume span {
+    border: 3px solid #fff;
+    padding: 5px 50px;
+}
 </style>

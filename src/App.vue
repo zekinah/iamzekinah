@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <navigation/>
-    <dntoogle/>
-    <router-view/>
+    <main id="page-wrap">
+      <dntoogle/>
+      <router-view/>
+    </main>
   </div>
 </template>
 <script>
