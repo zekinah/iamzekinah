@@ -26,6 +26,13 @@ $link: #8892b0;
 
 a {
     color: $link;
+    display: inline-block;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 a:hover {
     color: $link;
@@ -59,21 +66,21 @@ body.light-mode {
     animation:blinkingText 1.2s infinite;
 }
 @keyframes blinkingText{
-    0%{     color: #F5F2F4;    }
-    49%{    color: #F5F2F4; }
+    0%{     color: $light;    }
+    49%{    color: $light; }
     60%{    color: transparent; }
     99%{    color:transparent;  }
-    100%{   color: #F5F2F4;    }
+    100%{   color: $light;    }
 }
 body.light-mode .blink {
     animation:blinkingLightText 1.2s infinite;
 }
 @keyframes blinkingLightText{
-    0%{     color: #19242F;    }
-    49%{    color: #19242F; }
+    0%{     color: $dark;    }
+    49%{    color: $dark; }
     60%{    color: transparent; }
     99%{    color:transparent;  }
-    100%{   color: #19242F;    }
+    100%{   color: $dark;    }
 }
 .card {
     border-radius: 6px;
@@ -84,7 +91,7 @@ body.light-mode .blink {
 }
 
 .card .card-title a:hover {
-    color: #8892b0;
+    color: $link;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
@@ -313,6 +320,68 @@ body.light-mode .spacer-wrapper {
 .section__content p {
     margin-top: 0;
     margin-bottom: 25px;
+}
+.featured {
+    padding-bottom: 5rem;
+    font-family: "Space Mono", monospace;
+}
+.featured__project {
+    justify-content: space-between;
+    margin: 5rem 0;
+}
+.featured__image img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    position: relative;
+    mix-blend-mode: multiply;
+    filter: grayscale(80%) contrast(1) brightness(90%);
+    border-radius: 3px;
+}
+.featured__image a {
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(129 171 174);
+    border-radius: 4px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.featured__image a:hover {
+    background-color: unset;
+}
+.featured__image img:hover {
+    mix-blend-mode: unset;
+    -webkit-filter: unset;
+    filter: unset;
+}
+.featured__title {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color:$light
+}
+body.light-mode .featured__title {
+    color:$dark
+}
+.featured__title a:hover{
+    color: $primarycolor;
+}
+.featured__description {
+    color: $link;
+    line-height: normal;
+}
+.featured__builtof .tag {
+    background: #5290B2;
+    color: $light;
+}
+.featured__link a {
+    padding-right: 10px;
+}
+.featured__builtof {
+    display: block;
+}
+.featured__link {
+    display: flex;
+    width: 100%;
 }
 .skills {
     display: -webkit-box;
