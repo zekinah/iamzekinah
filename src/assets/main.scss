@@ -87,7 +87,7 @@ body.light-mode .blink {
     font-family: 'Space Mono', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,.7);
 }
 
 .card .card-title a:hover {
@@ -97,7 +97,6 @@ body.light-mode .blink {
 }
 
 .card .card-content {
-    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
     height: 100%;
     width: 100%;
     padding: 1rem 1.75rem;
@@ -327,7 +326,8 @@ body.light-mode .spacer-wrapper {
     margin-top: 0;
     margin-bottom: 25px;
 }
-.featured {
+.featured,
+.open-source {
     padding-bottom: 5rem;
     font-family: "Space Mono", monospace;
 }
