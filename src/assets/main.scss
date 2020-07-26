@@ -456,10 +456,24 @@ body.light-mode .featured__title {
 body.light-mode .footer .footer__content {
     color: $dark;
 }
+.masonry {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 125vh;
+}
 /*Responsive*/
+@media screen and (max-width: 1600px) {
+    .masonry {
+        height: 175vh;
+    }
+}
 @media screen and (max-width: 1280px) {
     .section {
         padding: 100px;
+    }
+    .masonry {
+        height: 130vh;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -473,11 +487,17 @@ body.light-mode .footer .footer__content {
     .section__title {
         margin-right: 50px;
     }
+    .masonry {
+        height: 115vh;
+    }
 }
 @media all and (max-width: 900px) {
     .page {
         padding-right: 30px;
         padding-left: 30px;
+    }
+    .masonry {
+        height: 150vh;
     }
 }
 @media screen and (max-width: 768px) {
@@ -496,6 +516,9 @@ body.light-mode .footer .footer__content {
     .section__content {
         padding-top: 30px;
         padding-left: 50px;
+    }
+    .masonry {
+        height: unset;
     }
 }
 @media screen and (max-width: 630px) {

@@ -9,7 +9,7 @@
     <div class="open-source">
       <h3 class="page-subheader">Open Source</h3>
       <Loading v-show="profileLoading"/>
-      <div class="columns is-multiline">
+      <div class="columns is-multiline masonry">
           <div v-for="repos of repository" :key="repos.id" class="column is-one-third" v-show="!repos.fork">
             <Repo :data="repos"/>
           </div>

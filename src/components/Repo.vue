@@ -10,8 +10,8 @@
               </svg>
             </span>
             <a class="repo__link" :href="data.html_url" target="_blank" rel="noopener noreferrer">{{data.name}}</a>
-            <a class="repo__homepage" :href="data.homepage" target="_blank" rel="noopener noreferrer" v-if="data.homepage">
-              <span class="icon is-pulled-right" >
+            <a class="repo__homepage is-pulled-right" :href="data.homepage" target="_blank" rel="noopener noreferrer" v-if="data.homepage">
+              <span class="icon" >
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
                 </svg>
@@ -19,9 +19,6 @@
             </a>
             </p>
           <p class="repo__description">{{data.description}}</p>
-
-
-
           <nav class="repo__stats level is-mobile">
             <div class="level-left">
               <a class="repo__language level-item">
