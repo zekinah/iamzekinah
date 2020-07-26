@@ -285,6 +285,12 @@ body.light-mode .spacer-wrapper {
 .page-header-small {
     font-size: 54px;
 }
+.page-subheader {
+    font-size: 46px;
+    line-height: 1.3em;
+    margin: 60px auto 0.65em;
+    font-weight: 800;
+}
 .page-content {
     color: $light;
     padding-top: 75px;
@@ -504,6 +510,9 @@ body.light-mode .footer .footer__content {
     }
     .page-header-small {
         font-size: 9vw;
+    }
+    .page-subheader {
+        font-size: 7vw;
     }
 }
 @media screen and (max-width: 550px) {
