@@ -3,7 +3,7 @@
     <div class="card tile">
       <div class="card-content">
         <div class="content">
-          <p class="repo__title">
+          <p class="repo__title title is-6">
             <span class="icon">
               <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M18,22A2,2 0 0,0 20,20V4C20,2.89 19.1,2 18,2H12V9L9.5,7.5L7,9V2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18Z" />
@@ -58,29 +58,3 @@ export default {
   props: ['data'],
 }
 </script>
-
-<style lang="scss">
-  .repo .repo__title {
-      font-weight: bold;
-  }
-  .repo .repo__title a {
-      color: #4a4a4a;
-  }
-  .repo .repo__title svg {
-    position: absolute;
-    margin-top: 6px;
-  }
-  .repo__description {
-      font-size: 13px;
-  }
-  .repo__stats {
-      font-size: 15px;
-      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-      font-weight: 300;
-      line-height: 1.5em;
-      margin-top: 40px;
-  }
-  .repo__stats a {
-    color: #beaab7;
-  }
-</style>
