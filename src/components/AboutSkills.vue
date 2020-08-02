@@ -18,7 +18,7 @@
 
 <script>
 export default {
-    name: 'section-skills',
+    name: 'AboutSkills',
      data: () => ({
       skills: [
         {

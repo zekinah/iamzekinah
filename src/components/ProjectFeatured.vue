@@ -1,18 +1,18 @@
 <template>
   <div class="featured__content">
     <div v-for="f of featured" :key="f.project_id">
-      <FeaturedOdd :data="f" v-if="f.project_id % 2 != 0"/>
-      <FeaturedEven :data="f" v-else/>
+      <ProjectFeaturedOdd :data="f" v-if="f.project_id % 2 != 0"/>
+      <ProjectFeaturedEven :data="f" v-else/>
     </div>
   </div>
 </template>
 
 <script>
-import FeaturedEven from "@/components/FeaturedEven.vue";
-import FeaturedOdd from "@/components/FeaturedOdd.vue";
+import ProjectFeaturedEven from "@/components/ProjectFeaturedEven.vue";
+import ProjectFeaturedOdd from "@/components/ProjectFeaturedOdd.vue";
 
 export default {  
-  name: 'Featured',
+  name: 'ProjectFeatured',
    data: () => ({
     featured: [
         {
@@ -48,8 +48,8 @@ export default {
       ]
   }),
   components: {
-    FeaturedEven,
-    FeaturedOdd
+    ProjectFeaturedEven,
+    ProjectFeaturedOdd
   },
 }
 </script>

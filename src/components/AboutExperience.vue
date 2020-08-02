@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    name: 'section-experience',
+    name: 'AboutExperience',
     data: () => ({
       experience: [
           { id: 1, name: "OptimizeX", time: "Sept 2018 - Present", role: "Web Developer" },

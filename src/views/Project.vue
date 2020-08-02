@@ -4,18 +4,18 @@
     <div class="page-content"></div>
     <div class="featured">
       <h3 class="page-subheader">Featured</h3>
-      <Featured />
+      <ProjectFeatured />
     </div>
     <div class="wordpress">
       <h3 class="page-subheader">Wordpress</h3>
-      <Wordpress />
+      <ProjectWordpress />
     </div>
     <div class="open-source">
       <h3 class="page-subheader">Open Source</h3>
       <Loading v-show="profileLoading"/>
       <div class="columns is-multiline masonry">
           <div v-for="repos of repository" :key="repos.id" class="column is-one-third" v-show="!repos.fork">
-            <Repo :data="repos"/>
+            <ProjectRepository :data="repos"/>
           </div>
       </div>
     </div>
@@ -26,9 +26,9 @@
 <script>
 import GitHub from "github-api";
 import Loading from "@/components/Loading.vue";
-import Repo from "@/components/Repo.vue";
-import Featured from "@/components/Featured.vue";
-import Wordpress from "@/components/Wordpress.vue";
+import ProjectRepository from "@/components/ProjectRepository.vue";
+import ProjectFeatured from "@/components/ProjectFeatured.vue";
+import ProjectWordpress from "@/components/ProjectWordpress.vue";
 import SiteFooter from "@/components/SiteFooter.vue";
 const github = new GitHub();
 const user = github.getUser('zekinah');
@@ -67,9 +67,9 @@ export default {
     },
   },
   components: {
-    Repo,
-    Featured,
-    Wordpress,
+    ProjectFeatured,
+    ProjectRepository,
+    ProjectWordpress,
     Loading,
     SiteFooter
   },

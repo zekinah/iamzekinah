@@ -20,7 +20,7 @@
 
 <script>
 export default {
-    name: 'section-otherstuff',
+    name: 'AboutOtherstuff',
     data: () => ({
       other_stuffs: [
           { id: 1, name: "Badminton"},
