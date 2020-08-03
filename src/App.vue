@@ -3,7 +3,9 @@
     <navigation/>
     <main id="page-wrap">
       <dntoogle/>
-      <router-view/>
+      <transition name="fade" mode="out-in">
+         <router-view></router-view>
+      </transition>
     </main>
   </div>
 </template>
