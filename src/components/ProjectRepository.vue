@@ -9,8 +9,8 @@
                   <path fill="currentColor" d="M18,22A2,2 0 0,0 20,20V4C20,2.89 19.1,2 18,2H12V9L9.5,7.5L7,9V2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18Z" />
               </svg>
             </span>
-            <a class="repo__link" :href="data.html_url" target="_blank" rel="noopener noreferrer">{{data.name}}</a>
-            <span class="is-pulled-right">
+            <a class="repo__link mr-2 ml-2" :href="data.html_url" target="_blank" rel="noopener noreferrer">{{data.name}}</a>
+            <span class="repo__links">
               <a class="pr-1" :href="data.html_url" target="_blank" rel="nofollow noopener noreferrer">
                 <span class="icon">
                   <svg style="width:24px;height:24px" viewBox="0 0 24 24">

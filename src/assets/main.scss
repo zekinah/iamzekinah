@@ -99,7 +99,7 @@ body.light-mode .blink {
 .card .card-content {
     height: 100%;
     width: 100%;
-    padding: 1rem 1.75rem;
+    padding: 1rem 1.25rem;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
@@ -453,9 +453,13 @@ body.light-mode .featured__title {
 }
 .repo .repo__title {
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .repo .repo__title a {
     color: #4a4a4a;
+    flex: auto;
 }
 .repo .repo__title svg {
   position: absolute;
@@ -568,7 +572,7 @@ body.light-mode .footer .footer__content {
 /*Responsive*/
 @media screen and (max-width: 1600px) {
     .masonry {
-        height: 190vh;
+        height: 200vh;
     }
 }
 @media screen and (max-width: 1280px) {
