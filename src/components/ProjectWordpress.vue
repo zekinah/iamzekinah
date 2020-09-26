@@ -64,7 +64,7 @@ export default {
           project_url: "https://wordpress.org/plugins/zone-pandemic-covid-19/",
           project_url_github: "https://github.com/zekinah/zone-pandemic-covid19",
           project_image: "https://raw.githubusercontent.com/zekinah/iamzekinah/master/src/assets/projects/wp-zone-covid19.jpg",
-          project_description: "A WordPress plugin that provides a shortcode that displays the live recorded data of how many patient(s) are active, confirmed, dead or recovered, in a world, and the continent or country assigned.",
+          project_description: "A WordPress plugin that provides a shortcode that displays the live recorded data of how many patient(s) are active, confirmed, dead or recovered world wide.",
           project_tags: [
             { tag: "PHP", },
             { tag: "jQuery", },
