@@ -7,7 +7,7 @@
       <router-link v-for="item in navigation" :key="item.title" :to="item.link" :id="item.id">
         <span>{{ item.title }}</span>
       </router-link>
-      <a id="resume" href="//drive.google.com/file/d/1MPeCk1uXt_OloTez2yqlJtylTAt5s7Qu/view?usp=sharing" target="_blank"><span>Resume</span></a>
+      <a id="resume" href="//drive.google.com/file/d/1Co-_KOvRb-UbjMkH_FrCcnYidZg1hUwN/view" target="_blank"><span>Resume</span></a>
     </Slide>
   </div>
 </template>
