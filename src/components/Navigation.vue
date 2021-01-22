@@ -22,7 +22,7 @@ export default {
     data: () => ({
       navigation: [
           { id: "home", title: "Home", link: "/" },
-          { id: "project", title: "Project", link: "/project" },
+          { id: "project", title: "Projects", link: "/project" },
           { id: "about", title: "About", link: "/about" }
         ]
      })

@@ -7,7 +7,7 @@
       <ProjectFeatured />
     </div>
     <div class="wordpress">
-      <h3 class="page-subheader">Wordpress</h3>
+      <h3 class="page-subheader">Wordpress Plugins</h3>
       <ProjectWordpress />
     </div>
     <div class="open-source">
