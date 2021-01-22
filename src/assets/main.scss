@@ -493,6 +493,11 @@ body.light-mode .featured__title {
     font-size: .9rem;
     margin-bottom: 5px;
 }
+.skills__list li:before {
+    content: "▹";
+    left: 0px;
+    padding-right: 5px;
+}
 .company {
     margin-bottom: 25px;
 }
@@ -616,6 +621,7 @@ body.light-mode .footer .footer__content {
         text-align: left;
         width: auto;
         padding: unset;
+        font-size: 20px;
     }
     .section__content {
         padding-top: 30px;
@@ -659,6 +665,12 @@ body.light-mode .footer .footer__content {
     }
     .page-content {
         padding-top: 40px;
+    }
+    .skills {
+        flex-direction: column;
+    }
+    .skills__content {
+        padding-bottom: 15px;
     }
 }
 @media screen and (max-width: 480px) {

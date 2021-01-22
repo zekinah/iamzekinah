@@ -25,12 +25,12 @@ export default {
           skill_id: 1,
           skill_title: "Technologies",
           skill_list: [
-            { skill_name: "Javascript (ES6+)", },
+            { skill_name: "Javascript (ES6)", },
+            { skill_name: "HTML5 & (S)CSS", },
             { skill_name: "jQuery + Ajax", },
             { skill_name: "VueJS + Axios", },
-            { skill_name: "HTML5 & CSS3", },
             { skill_name: "My Sqli", },
-            { skill_name: "PHP", }
+            { skill_name: "PHP", } 
           ]
         },
         {
@@ -41,6 +41,7 @@ export default {
             { skill_name: "Magento 1.9 & 2", },
             { skill_name: "GIT & SVN", },
             { skill_name: "Bootstrap", },
+            { skill_name: "Vuetify", },
             { skill_name: "Bulma", }
           ]
         }
