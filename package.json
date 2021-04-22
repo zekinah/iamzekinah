@@ -10,7 +10,7 @@
   "dependencies": {
     "bulma": "^0.9.0",
     "core-js": "^3.6.5",
-    "github-api": "^3.3.0",
+    "github-api": "^3.4.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.12",
     "vue-analytics": "^5.22.1",
