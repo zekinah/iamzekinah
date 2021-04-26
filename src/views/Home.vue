@@ -12,7 +12,7 @@
   </div>
 </template>
 <script>
-import followme from '../components/Followme.vue'
+import followme from '@/components/Followme.vue'
 
 export default {
   name: 'home',
