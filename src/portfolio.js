@@ -4,7 +4,8 @@
  */
 
 
-// Homepage Section
+/**  Homepage PAGE */
+
 const introduction = {
     name: "Zekinah Lecaros",
     tagline: "A person who will strive for his achievements with the use of digital tools and open source.",
@@ -72,7 +73,8 @@ const introduction = {
     display: true
 }
 
-const wordpressProject = {
+// Thumbnail Project Section
+const thumbnailProject = {
     wordpress: [
         {
           project_title: "Zone Cookie",
