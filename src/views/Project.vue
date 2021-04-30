@@ -36,7 +36,7 @@ const user = github.getUser(featuredProject.github_username);
 
 export default {  
   name: 'Project',
-   data: () => ({
+  data: () => ({
     counter: 1,
     profileLoading: false,
     reposLoading: false,

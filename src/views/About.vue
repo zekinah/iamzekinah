@@ -2,8 +2,8 @@
   <div class="page about">
     <h1 class="page-header">About.</h1>
     <div class="page-content"></div>
-    <AboutBackground/>
-    <AboutSkills/>
+    <AboutBackground />
+    <AboutSkills />
     <AboutExperience/>
     <AboutOtherstuff/>
     <SiteFooter/>

@@ -122,10 +122,10 @@ const thumbnailProject = {
 const background = {
     section: [
         {
-            description: "I'm currently working as Web Developer at <strong>OptimizeX Inc.</strong> building things for web with someone awesome people. Before now, I recently graduated at <strong>Cavite State University</strong> and an interned student in <strong>Amorele Technology</strong>. ",
+            description: "I'm currently working as Full Stack Developer at <strong>August99</strong> building things for web with someone awesome people. ",
         },
         {
-            description: "As a web developer, I always enjoy learning new stuffs that can improve myself in modern technology regarding on web development. My goal is to always build great websites and plugins that are scalable and efficient.",
+            description: "As a developer, I always enjoy learning new stuffs that can improve myself in modern technology regarding on web development. My goal is to always build great websites and plugins that are scalable and efficient.",
         }
     ],
     display: true
