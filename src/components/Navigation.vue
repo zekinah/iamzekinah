@@ -7,11 +7,12 @@
       <router-link v-for="item in navigation" :key="item.title" :to="item.link" :id="item.id">
         <span>{{ item.title }}</span>
       </router-link>
-      <a id="resume" href="//drive.google.com/file/d/1NovnG3rvqO2wjGranm7TvfigIeAd0W8D/view" target="_blank"><span>Resume</span></a>
+      <a id="resume" :href="intro.resume_link" target="_blank"><span>Resume</span></a>
     </Slide>
   </div>
 </template>
 <script>
+import { introduction } from "@/portfolio";
 import { Slide } from 'vue-burger-menu'
 
 export default {
@@ -20,6 +21,7 @@ export default {
         Slide
     },
     data: () => ({
+      intro: introduction,
       navigation: [
           { id: "home", title: "Home", link: "/" },
           { id: "project", title: "Projects", link: "/project" },

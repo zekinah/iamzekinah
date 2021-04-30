@@ -12,7 +12,7 @@
   </div>
 </template>
 <script>
-import {introduction} from "@/portfolio";
+import { introduction } from "@/portfolio";
 import followme from '@/components/Followme.vue'
 export default {
   name: 'home',
