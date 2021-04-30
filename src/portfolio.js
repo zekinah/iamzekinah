@@ -191,3 +191,14 @@ const otherStuffs = {
     github_stats: "https://github-readme-stats.vercel.app/api?username=zekinah",
     display: true
 }
+
+/** Datas to be shared in components */
+export {
+  introduction,
+  featuredProject,
+  thumbnailProject,
+  background,
+  skillSet,
+  workExperiences,
+  otherStuffs
+};
