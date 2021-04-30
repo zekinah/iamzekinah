@@ -25,13 +25,15 @@
 
 <script>
 import GitHub from "github-api";
+import { featuredProject } from "@/portfolio";
 import Loading from "@/components/Loading.vue";
 import ProjectRepository from "@/components/ProjectRepository.vue";
 import ProjectFeatured from "@/components/ProjectFeatured.vue";
 import ProjectWordpress from "@/components/ProjectWordpress.vue";
 import SiteFooter from "@/components/SiteFooter.vue";
 const github = new GitHub();
-const user = github.getUser('zekinah');
+const user = github.getUser(featuredProject.github_username);
+
 export default {  
   name: 'Project',
    data: () => ({

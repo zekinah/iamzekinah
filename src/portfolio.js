@@ -7,6 +7,7 @@
 /**  Homepage PAGE */
 
 const introduction = {
+    abbr: "ZL",
     name: "Zekinah Lecaros",
     tagline: "A person who will strive for his achievements with the use of digital tools and open source.",
     email: "zjlecaros@gmail.com",
@@ -66,6 +67,7 @@ const introduction = {
           ]
         }
     ],
+    github_username: "zekinah",
     display: true
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="navigation">
     <span class="site-logo">
-      <router-link to="/" class="title">ZL</router-link>
+      <router-link to="/" class="title">{{ intro.abbr }}</router-link>
     </span>
     <Slide right>
       <router-link v-for="item in navigation" :key="item.title" :to="item.link" :id="item.id">
