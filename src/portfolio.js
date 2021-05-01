@@ -192,18 +192,18 @@ const otherStuffs = {
           { name: "Dancing" },
           { name: "Cardistry" },
         ],
-        display: true
+        hobby_display: true
       },
       {
         title: "Coders Rank Stats",
         codersrank_name: "zekinah",
-        display: true
+        codersrank_display: true
       },
       {
         title: "Github Stats",
         github_link: "https://github.com/zekinah",
         github_stats: "https://github-readme-stats.vercel.app/api?username=zekinah",
-        display: true
+        github_display: true
       }
     ],
     display: true
