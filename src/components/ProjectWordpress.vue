@@ -43,9 +43,9 @@
 import { thumbnailProject } from "@/portfolio";
 
 export default {  
-  name: 'ProjectWordpress',
-   data: () => ({
-    tProject: thumbnailProject
-  })
+    name: 'ProjectWordpress',
+    data: () => ({
+        tProject: thumbnailProject
+    })
 }
 </script>
