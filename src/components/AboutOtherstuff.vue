@@ -4,17 +4,18 @@
     <div class="column section__content">
 
       <!-- Coders Rank Section -->
-      <div class="otherstuff__list" v-show="oStuffs.section[1].codersrank_display">
+      <div class="otherstuff__list" v-show="oStuffs.section[1].display">
         <div class="otherstuff__name">{{ oStuffs.section[1].title }}</div>
         <div class="otherstuff__content">
           <codersrank-widget :username="oStuffs.section[1].codersrank_name"></codersrank-widget>
         </div>
       </div>
       
-      <div class="otherstuff__list">
-        <div class="otherstuff__name">Github Stats</div>
+      <!-- Github Section -->
+      <div class="otherstuff__list" v-show="oStuffs.section[2].display">
+        <div class="otherstuff__name">{{ oStuffs.section[2].title }}</div>
         <div class="otherstuff__content">
-            <p><a href="https://github.com/zekinah" target="_blank"><img :src="githubStatsUrl" alt="zekinah-stats"></a></p>
+            <p><a :href="oStuffs.section[2].github_link" target="_blank"><img :src="oStuffs.section[2].github_stats" alt="zekinah-stats"></a></p>
         </div>
       </div>
 
