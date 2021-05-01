@@ -184,13 +184,28 @@ const workExperiences = {
 
 // Other Stuff Section
 const otherStuffs = {
-    hobbies: [
-        { name: "Badminton"},
-        { name: "Dancing" },
-        { name: "Cardistry" },
+    section: [
+      {
+        title: "Hobbies",
+        description: [
+          { name: "Badminton"},
+          { name: "Dancing" },
+          { name: "Cardistry" },
+        ],
+        display: true
+      },
+      {
+        title: "Coders Rank Stats",
+        codersrank_name: "zekinah",
+        display: true
+      },
+      {
+        title: "Github Stats",
+        github_link: "https://github.com/zekinah",
+        github_stats: "https://github-readme-stats.vercel.app/api?username=zekinah",
+        display: true
+      }
     ],
-    codersrank_name: "zekinah",
-    github_stats: "https://github-readme-stats.vercel.app/api?username=zekinah",
     display: true
 }
 

@@ -19,15 +19,12 @@
 </template>
 
 <script>
+import { otherStuffs } from "@/portfolio";
+
 export default {
     name: 'AboutOtherstuff',
     data: () => ({
-      other_stuffs: [
-          { id: 1, name: "Badminton"},
-          { id: 2, name: "Dancing" },
-          { id: 3, name: "Paramour" },
-        ],
-      githubStatsUrl: "https://github-readme-stats.vercel.app/api?username=zekinah"
+      oStuffs: otherStuffs
     })
 }
 </script>
