@@ -3,6 +3,7 @@ import App from '@/App.vue'
 import '@/registerServiceWorker'
 import router from '@/router'
 import VueMeta from 'vue-meta'
+import VueGtag from "vue-gtag"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { 
   faFacebook,
@@ -26,6 +27,11 @@ library.add(
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
+
+
+Vue.use(VueGtag, {
+  config: { id: "UA-169027561-1" }
+}, router);
 
 require("./assets/main.scss");
 
