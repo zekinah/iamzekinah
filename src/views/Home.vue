@@ -21,9 +21,6 @@ export default {
   }),
   components: {
     followme
-  },
-  mounted() {
-    this.$ga.page('/home');
   }
 }
 </script>

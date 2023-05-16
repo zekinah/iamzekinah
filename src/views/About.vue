@@ -24,9 +24,6 @@ export default {
     AboutSkills,
     AboutOtherstuff,
     SiteFooter
-  },
-  mounted() {
-    this.$ga.page('/about');
   }
 }
 </script>

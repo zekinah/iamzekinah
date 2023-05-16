@@ -74,9 +74,6 @@ export default {
     ProjectWordpress,
     Loading,
     SiteFooter
-  },
-  mounted() {
-    this.$ga.page('/project');
   }
 }
 </script>
