@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from '@/App.vue'
 import '@/registerServiceWorker'
 import router from '@/router'
-import VueAnalytics from 'vue-analytics'
 import VueMeta from 'vue-meta'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { 
@@ -27,11 +26,6 @@ library.add(
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
-
-Vue.use(VueAnalytics, {
-  id: 'UA-169027561-1',
-  router
-});
 
 require("./assets/main.scss");
 
