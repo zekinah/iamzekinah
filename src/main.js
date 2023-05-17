@@ -30,7 +30,7 @@ Vue.config.productionTip = false
 
 
 Vue.use(VueGtag, {
-  config: { id: "UA-169027561-1" }
+  config: { id: "G-KV311QGZ2Z" }
 }, router);
 
 require("./assets/main.scss");
